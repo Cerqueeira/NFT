@@ -1,0 +1,145 @@
+:root {
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+
+  --very-dark-blue-mainBG: hsl(217, 54%, 11%);
+  --very-dark-blue-cardBG: hsl(216, 50%, 16%);
+  --very-dark-blue-line: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+
+  font-family: "Outfit", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--very-dark-blue-mainBG);
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+h3 {
+  color: var(--white);
+}
+
+p {
+  color: hsl(215, 51%, 70%, 0.7);
+  font-size: 18px;
+  margin-right: 0;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+img:first-of-type {
+  width: 300px;
+  border-radius: 15px;
+  position: relative;
+}
+
+img:nth-of-type(2) {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -250%);
+  opacity: 0;
+}
+
+h3,
+p {
+  padding: 0.5rem;
+}
+
+.ethereum img {
+  width: 10px;
+  margin-right: 5px;
+  margin-left: 0.5rem;
+}
+
+.ethereum span:first-of-type {
+  color: var(--cyan);
+}
+
+.ethereum span:nth-of-type(2) {
+  margin-left: 100px;
+  color: var(--soft-blue);
+}
+
+.card {
+  background-color: var(--very-dark-blue-cardBG);
+  padding: 1rem;
+  border-radius: 15px;
+  width: 330px;
+  box-shadow: 10px 10px 7px rgba(0, 0, 0, 0.5);
+}
+
+.linha {
+  height: 0.1px;
+  background-color: hsl(215, 51%, 70%, 0.2);
+  border: none;
+  margin: 1rem;
+}
+
+.avatar img {
+  width: 1.7rem;
+  justify-content: center;
+  border: 1px solid white;
+  margin-left: 0.5rem;
+}
+
+.avatar span {
+  color: var(--soft-blue);
+  margin-left: 0.5rem;
+  text-align: center;
+  justify-content: center;
+  position: relative;
+  bottom: 0.4rem;
+  left: 0.5rem;
+}
+
+.avatar span:nth-of-type(2) {
+  color: var(--white);
+  margin-left: 0.5rem;
+  text-align: center;
+  justify-content: center;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: var(--white);
+  position: absolute;
+  bottom: 0;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+h3:hover {
+  color: var(--cyan);
+  cursor: pointer;
+}
+
+.avatar span:nth-of-type(2):hover {
+  color: var(--cyan);
+  cursor: pointer;
+}
+
+img:nth-of-type(2):hover {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -250%);
+  opacity: 1;
+  border: 1px solid red;
+  background-size: 300px;
+  background-color: hsl(178, 100%, 50%, 0.5);
+  transition: background 0.2s;
+}
